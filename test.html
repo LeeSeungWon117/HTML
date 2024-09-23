@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script>
+	function test(){
+		alert('test')
+	}
+	function test2(){
+		test()
+	}
+		//test2()
+	function goview(x){
+		//alert(x);
+		if (x==1){
+			window.location.href = "https://www.naver.com"
+		}	else if (x==2){
+			window.location.href = "https://www.google.com"
+		}	else if (x==3){
+			window.location.href = "https://www.synex.co.kr"
+		}	else if (x==4){
+			window.location.href = "http://www.synexit.co.kr"
+		}	else if (x==5){
+			window.location.href = "https://www.daum.net"
+		}
+		//window.location.href = "https://www.naver.com"
+	}
+</script>
+	<style>
+		body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+		table {
+			border:1px solid #da3327
+		}
+		tr,th,td {
+			border:1px solid #2814dd
+		}
+		th {
+			background-color: #f2f2f2;
+		}
+		.button {
+			background-color: #b83131;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 1em;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+		.button.blue {
+			background-color: #004466;
+		}
+	</style>
+</head>
+<body>
+<table>
+	<tr>
+		<th> 번호</th>
+		<th> 병원명</th>
+		<th> 방문일</th>
+		<th> 상태</th>
+		<th> 이동</th>
+	</tr>
+	<tr>
+		<td> 1</td>
+		<td> 뉴성민병원</td>
+		<td> 2024-07-25</td>
+		<td> 방문중</td>
+		<td> <button class="button" onclick="goview(1);">이동</button></td>
+	</tr>
+	<tr>
+		<td> 2</td>
+		<td> 힘내라내과</td>
+		<td> 2024-07-25</td>
+		<td> 완료</td>
+		<td> <button class="button" onclick="goview(2);">이동</button></td>
+	</tr>
+	<tr>
+		<td> 3</td>
+		<td> 유앤이내과</td>
+		<td> 2024-07-19</td>
+		<td> 방문전</td>
+		<td> <button class="button" onclick="goview(3);">이동</button></td>
+	</tr>
+	<tr>
+		<td> 4</td>
+		<td> 집으로의원</td>
+		<td> 2024-07-26</td>
+		<td> 방문중</td>
+		<td> <button class="button" onclick="goview(4);">이동</button></td>
+	</tr>
+	<tr>
+		<td> 5</td>
+		<td> 유앤이내과</td>
+		<td> 2024-07-26</td>
+		<td> 완료</td>
+		<td> <button class="button blue" onclick="goview(5);">이동</button></td>
+	</tr>
+</table>
+</body>
+</html>
