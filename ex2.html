@@ -5,10 +5,26 @@
         <title>
         </title>
             <style>
+                .button {
+                    color: rgb(255, 187, 0);
+                }
             </style>
                 <body>
-                    <input type="'button" value="hi" onclick="alert('hi')">
-                    <input type="text" onchange="alert('changed')" />
-                    <input type="text" onkeydown="alert('key down!')"
+                    <input type="button" value="hi" class="button" onclick="alert('hi')"\>
+                    <input type="password" id="text1" onchange="alert('changed')"\>
+                    <input type="text" id="text2" onkeydown="alert('key down!')"\>
+                    <input type="radio" name="radio1" value="abc"\>abc
+                    <input type="radio" name="radio1" value="abc"\>def
+                    <input type="checkbox" name="check1" value="abc"\>123
+                    <input type="checkbox" name="check1" value="abc"\>456
+                    <input type="checkbox" name="check1" value="abc"\>789
+                    <textarea name="textarea1" size="100" placeholder="값을 입력해주세요"></textarea>
+                        <select name="enname">
+                            <option value="1">김영수</option>
+                            <option value="2">이종화</option>
+                            <option value="3">한현상</option>
+                            <option value="4">최승천</option>
+                            <option value="5">이승원</option>
+                        </select>
                 </body>
 </html>
